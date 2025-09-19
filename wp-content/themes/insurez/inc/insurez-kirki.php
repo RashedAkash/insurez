@@ -71,3 +71,40 @@ new \Kirki\Field\Text(
 );
 }
 header_topbar();
+function footer_copyright(){
+
+
+
+    new \Kirki\Section(
+	'footer',
+	[
+		'title'       => esc_html__( 'My footer Section', 'kirki' ),
+		'description' => esc_html__( 'My Section Description.', 'kirki' ),
+		'panel'       => 'insurez_panel',
+		'priority'    => 160,
+	]
+);
+
+
+
+new \Kirki\Field\Text(
+	[
+		'settings' => 'footer_copyright_setting',
+		'label'    => esc_html__( 'Text Control', 'kirki' ),
+		'section'  => 'footer',
+		'default'  => esc_html__( '© Copyright 2023, Insurez. All Rights Reserved', 'kirki' ),
+		'priority' => 10,
+	]
+);
+new \Kirki\Field\Text(
+	[
+		'settings' => 'topbar_location_setting',
+		'label'    => esc_html__( 'Text Control', 'kirki' ),
+		'section'  => 'insurez_topbar',
+		'default'  => esc_html__( '66 Broklyne Golden Street, USA', 'kirki' ),
+		'priority' => 10,
+	]
+);
+
+}
+footer_copyright();

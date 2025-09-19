@@ -87,37 +87,37 @@ function insurez_widget_init() {
 		'name'          => __( 'Fiiter Widget 01', 'insurez' ),
 		'id'            => 'footer-widget-1',
 		'description'   => __( 'Widgets in this area will be shown footer', 'insurez' ),
-		'before_widget' => '<div id="%1$s" class="footer__widget mb-30 wow fadeInUp %2$s">',
+		'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-1 pb-30 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="footer__widget--title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<h3 class="footer__widget-title footer__widget-title-3">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Fiiter Widget 02', 'insurez' ),
 		'id'            => 'footer-widget-2',
 		'description'   => __( 'Widgets in this area will be shown footer', 'insurez' ),
-		'before_widget' => '<div id="%1$s" class="footer__widget mb-30  wow fadeInUp %2$s">',
+		'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-2 pb-30 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="footer__widget--title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<h3 class="footer__widget-title footer__widget-title-3">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Fiiter Widget 03', 'insurez' ),
 		'id'            => 'footer-widget-3',
 		'description'   => __( 'Widgets in this area will be shown footer', 'insurez' ),
-		'before_widget' => '<div id="%1$s" class="footer__widget mb-30 pl-30 wow fadeInUp %2$s">',
+		'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-3 pb-30 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="footer__widget--title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<h3 class="footer__widget-title footer__widget-title-3">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Fiiter Widget 04', 'insurez' ),
 		'id'            => 'footer-widget-4',
 		'description'   => __( 'Widgets in this area will be shown footer', 'insurez' ),
-		'before_widget' => '<div id="%1$s" class="footer__widget mb-30 wow fadeInUp %2$s">',
+		'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-3 pb-30 %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="footer__widget--title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<h3 class="footer__widget-title footer__widget-title-3">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'insurez_widget_init' );
