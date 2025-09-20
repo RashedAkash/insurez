@@ -2,7 +2,7 @@
     <div class="postbox__thumb m-img p-relative">
     <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail(); ?>
-        <span><?php echo get_the_date( 'd M' ); ?></span>
+        <span><?php get_the_date(); ?></span>
     </a>
     </div>
     <div class="postbox__content">

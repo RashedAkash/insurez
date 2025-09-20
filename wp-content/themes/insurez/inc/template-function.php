@@ -28,7 +28,7 @@ function insurez_main_menu(){
     ));
 }
 // solub_navigation 
-function solub_pagination(){
+function insurez_pagination(){
     $pages = paginate_links( array( 
         'type' => 'array',
         'prev_text'    => __('<i class="fal fa-long-arrow-left"></i>','harry'),
@@ -45,22 +45,25 @@ function solub_pagination(){
 
 //search form
 
-function solub_blog_search_form( $form ) {
-	$form = '<div class="tp-sidebar-search">
+function insurez_blog_search_form( $form ) {
+	$form = '
+     <div class="sidebar__widget sidebar__widget-1 mb-40">
+        <div class="sidebar__widget-content">
+        <div class="sidebar__search">
             <form action="' . home_url( '/' ) . '" method="get">
-            <div class="tp-sidebar-search-input p-relative">
-                <input type="text" name="s" value="' . get_search_query() . '" placeholder="' . esc_attr__( 'Enter your keywords...' ) . '">
-                <button class="tp-sidebar-search-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M9.55005 18.1001C14.2721 18.1001 18.1001 14.2721 18.1001 9.55005C18.1001 4.82799 14.2721 1 9.55005 1C4.82799 1 1 4.82799 1 9.55005C1 14.2721 4.82799 18.1001 9.55005 18.1001Z" stroke="#1F2220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M18.9992 19L17.1992 17.2" stroke="#1F2220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
-            </div>
+                <div class="sidebar__search-input-2">
+                    <input type="text" name="s" value="' . get_search_query() . '" placeholder="' . esc_attr__( 'Search' ) . '">
+                    <button type="submit"><i class="far fa-search"></i></button>
+                </div>
             </form>
-        </div>';
+        </div>
+        </div>
+    </div> 
+   ';
 
 	return $form;
 }
-add_filter( 'get_search_form', 'solub_blog_search_form' );
+add_filter( 'get_search_form', 'insurez_blog_search_form' );
 
 // exdos_tags
 function solub_tags(){

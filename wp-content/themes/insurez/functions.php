@@ -77,9 +77,9 @@ function insurez_widget_init() {
 		'name'          => __( 'Blog Sidebar', 'insurez' ),
 		'id'            => 'blog-sidebar',
 		'description'   => __( 'Widgets in this area will be shown blog sidebar', 'insurez' ),
-		'before_widget' => '<div id="%1$s" class="ablog__sidebar %2$s">',
+		'before_widget' => '<div id="%1$s" class="sidebar__wrapper %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="sidebar__widget--title mb-30">',
+		'before_title'  => '<h3 class="sidebar__widget-title">',
 		'after_title'   => '</h3>',
 	) );
 
