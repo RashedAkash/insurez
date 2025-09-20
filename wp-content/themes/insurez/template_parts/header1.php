@@ -7,6 +7,9 @@
     'logo_setting_url', 
     get_template_directory_uri() . '/assets/img/logo/logo.png' 
 );  ?>
+
+<?php $Quate_btn = get_theme_mod('header-btn',__('Get a Quote','insurez')) ?>
+<?php $Quate_btn_url = get_theme_mod('header-btn-url',__('#','insurez')) ?>
  <!-- header area start -->
    <header class="main-header d-none d-lg-block">
       <div class="tp-header">
@@ -57,20 +60,18 @@
                      </div>
                      <div class="tp-header__right-box d-flex justify-content-end align-items-center">
                         <div class="tp-header__right d-flex align-items-center">
+                           
                            <div class="tp-header-search search-open-btn">
                               <a href="javascript:void(0);"> <i class="fa-regular fa-magnifying-glass"></i></a>
                            </div>
+                        
+                           
+
                            <div class="tp-header__contact-number">
-                              <div class="sm-clist__icon">
-                                 <i class="flaticon-telephone"></i>
-                              </div>
-                              <div class="sm-clist__text text-start ml-15 mr-25">
-                                 <span>Call Us Anytime</span>
-                                 <a href="tel:+78690989067">+98 656 768 6789 </a>
-                              </div>
+                             <?php header_call();?>
                            </div>
                            <div class="tp-header-btn">
-                              <a class="tp-btn" href="contact.html">Get a Quote</a>
+                              <a class="tp-btn" href="<?php echo esc_url($Quate_btn_url); ?>"><?php echo esc_html($Quate_btn); ?></a>
                            </div>
                         </div>
                         <div class="sidebar__menu">

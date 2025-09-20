@@ -171,3 +171,4 @@ add_action( 'wp_enqueue_scripts', 'insurez_theme_scripts' );
 include_once('inc/insurez-kirki.php');
 include_once('inc/template-function.php');
 include_once('inc/nav-walker.php');
+include_once('inc/breadcrumb.php');

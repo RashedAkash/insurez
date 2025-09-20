@@ -1,5 +1,21 @@
 <?php
 
+
+function header_call(){
+    $call_text = get_theme_mod('header_call_text',__('Call Us Anytime','insurez'));
+    $call_number = get_theme_mod('header_call_number',__('+98 656 768 6789','insurez'));
+    ?>
+     <div class="sm-clist__icon">
+    <i class="flaticon-telephone"></i>
+</div>
+<div class="sm-clist__text text-start ml-15 mr-25">
+    <span><?php echo esc_html($call_text); ?></span>
+    <a href="tel:+78690989067"><?php echo esc_html($call_number); ?></a>
+</div>
+
+    <?php
+}
+
 //main menu
 function insurez_main_menu(){
     wp_nav_menu(array(
@@ -166,3 +182,5 @@ function solub_kses( $html_tags = '' ) {
 
 	return wp_kses( $html_tags, $allowed_html );
 }
+
+
