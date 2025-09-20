@@ -66,7 +66,7 @@ function insurez_blog_search_form( $form ) {
 add_filter( 'get_search_form', 'insurez_blog_search_form' );
 
 // exdos_tags
-function solub_tags(){
+function insurez_tags(){
 	$post_tags = get_the_tags();
     if ($post_tags) {
         foreach ($post_tags as $tag) {

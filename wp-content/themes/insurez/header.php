@@ -91,3 +91,57 @@
    <div class="search-popup-overlay"></div>
    <!-- search popup end -->
   <?php get_template_part('template_parts/header1'); ?>
+
+  <!-- tp-offcanvus-area-start -->
+   <div class="tpoffcanvas-area">
+      <div class="offcanvas__wrapper">
+         <div class="tpoffcanvas">
+            <div class="tpoffcanvas__close-btn">
+               <button class="close-btn"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="tpoffcanvas__logo">
+               <a href="index.html">
+                  <img src="assets/img/logo/logo-black.png" alt="">
+               </a>
+            </div>
+            <div class="mobile-menu"></div>
+            <div class="tpoffcanvas__contact">
+               <h4 class="tpoffcanvas__title">Contacts</h4>
+               <div class="tpoffcanvas__contact-content d-flex">
+                  <div class="tpoffcanvas__contact-content-icon">
+                     <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="tpoffcanvas__contact-content-content">
+                     <a
+                        href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86
+                        Road Broklyn Street, 600 </a>
+                  </div>
+               </div>
+               <div class="tpoffcanvas__contact-content d-flex">
+                  <div class="tpoffcanvas__contact-content-icon">
+                     <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="tpoffcanvas__contact-content-content">
+                     <a href="mailto:needhelp@company.com"> Needhelp@company.com </a>
+                  </div>
+               </div>
+               <div class="tpoffcanvas__contact-content d-flex">
+                  <div class="tpoffcanvas__contact-content-icon">
+                     <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="tpoffcanvas__contact-content-content">
+                     <a href="tel:01310-069824"> +92 666 888 0000</a>
+                  </div>
+               </div>
+            </div>
+            <div class="tpoffcanvas__social">
+               <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+               <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+               <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+               <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
